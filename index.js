@@ -1,3 +1,1 @@
-import Sample from "./class";
-
-console.log(new Sample());
+console.log("let's get starting!");
