@@ -22,16 +22,15 @@ class Dog extends Animal {
 }
 
 class Cat extends Animal {
-    speak(txt) {
-        super.speak(txt);
+
+    // has type "cat"
+    constructor(name){
+        super(name);
+        this.type = 'cat';
     }
 }
 
 class Lion extends Cat {
-    constructor(name, type){
-        super(name);
-        this.type = type;
-    }
 
     // use parent class method
     speak(txt) {
@@ -39,6 +38,7 @@ class Lion extends Cat {
         super.speak(str);
     }
 }
+
 
 const dog = new Dog('jack', 'dog');
 dog.speak('bow');

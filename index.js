@@ -157,18 +157,15 @@ var Dog = function (_Animal) {
 var Cat = function (_Animal2) {
     _inherits(Cat, _Animal2);
 
-    function Cat() {
+    // has type "cat"
+    function Cat(name) {
         _classCallCheck(this, Cat);
 
-        return _possibleConstructorReturn(this, (Cat.__proto__ || Object.getPrototypeOf(Cat)).apply(this, arguments));
-    }
+        var _this2 = _possibleConstructorReturn(this, (Cat.__proto__ || Object.getPrototypeOf(Cat)).call(this, name));
 
-    _createClass(Cat, [{
-        key: "speak",
-        value: function speak(txt) {
-            _get(Cat.prototype.__proto__ || Object.getPrototypeOf(Cat.prototype), "speak", this).call(this, txt);
-        }
-    }]);
+        _this2.type = 'cat';
+        return _this2;
+    }
 
     return Cat;
 }(Animal);
@@ -176,20 +173,17 @@ var Cat = function (_Animal2) {
 var Lion = function (_Cat) {
     _inherits(Lion, _Cat);
 
-    function Lion(name, type) {
+    function Lion() {
         _classCallCheck(this, Lion);
 
-        var _this3 = _possibleConstructorReturn(this, (Lion.__proto__ || Object.getPrototypeOf(Lion)).call(this, name));
-
-        _this3.type = type;
-        return _this3;
+        return _possibleConstructorReturn(this, (Lion.__proto__ || Object.getPrototypeOf(Lion)).apply(this, arguments));
     }
-
-    // use parent class method
-
 
     _createClass(Lion, [{
         key: "speak",
+
+
+        // use parent class method
         value: function speak(txt) {
             var str = txt + " like a " + this.type;
             _get(Lion.prototype.__proto__ || Object.getPrototypeOf(Lion.prototype), "speak", this).call(this, str);
