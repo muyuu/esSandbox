@@ -1,4 +1,4 @@
-console.log("let's get starting!");
+console.log("let's get started!");
 
 require("./classes/prototypeMethod");
 require("./classes/staticMethod");

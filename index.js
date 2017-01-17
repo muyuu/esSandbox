@@ -200,7 +200,7 @@ lion.speak('gao!');
 
 },{}],4:[function(require,module,exports){
 'use strict';
-console.log('let\'s get starting!');
+console.log('let\'s get started!');
 require('./classes/prototypeMethod');
 require('./classes/staticMethod');
 require('./classes/subClass');
