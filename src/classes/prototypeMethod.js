@@ -1,3 +1,9 @@
+console.log([
+    "=========================================",
+    "= prototypeMethod.js",
+    "=========================================",
+].join("\n"));
+
 class Sample {
     constructor(){
         // this function is Sample's ownProperty
