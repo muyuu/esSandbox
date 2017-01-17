@@ -13,14 +13,13 @@ const attachMethod = (methods, context)=>{
     });
 };
 
-const swim = function(){
+const swim = ()=>{
     console.log('swim');
 };
 
-const fly = function(){
-    console.log('fly ');
+const fly = ()=>{
+    console.log('fly');
 };
-
 
 class Fish {
     constructor(){

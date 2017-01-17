@@ -21,7 +21,7 @@ var swim = function swim() {
 };
 
 var fly = function fly() {
-    console.log('fly ');
+    console.log('fly');
 };
 
 var Fish = function Fish() {
